@@ -13,6 +13,7 @@ let result;
 let playerScore = 0;
 let computerScore = 0;
 
+// UI
 restartBtn.disabled = true;
 restartBtn.style.opacity = 0.5;
 playerText.style.color = "blue";
@@ -20,12 +21,6 @@ computerText.style.color = "green";
 
 // Changing name function
 
-// let name = 'Player';
-
-// function updateName() {
-//    name = document.getElementById("nameInput").value;
-//   document.getElementById("playerText").innerHTML = `${name} ?`;
-// }
 let name = 'Player';
 
 function updateName() {
@@ -37,7 +32,6 @@ function updateName() {
   input.value = '';
 }
 
-// document.getElementById("nameInput").addEventListener("change", updateName);
 
 // Counting scors and showing results
 
@@ -80,7 +74,7 @@ btns.forEach(button => button.addEventListener("click", (e) => {
     }
 }));
 
-// Game Logic
+// Computer choices
 
 function computerTurn() {
     const randNumber = Math.floor(Math.random() * 3) + 1;
@@ -97,6 +91,7 @@ function computerTurn() {
             break;
     }
 }
+// Commented code but also can be used if you want but need to be replaced by the other checkwinner() function
 
 // function checkWinner() {
 //     if (player === computer) {
@@ -109,6 +104,8 @@ function computerTurn() {
 //         return (player === "rock") ? "You win!" : "You lose!";
 //     }
 // }
+
+// Game logic
 
 function checkWinner() {
     if (player === computer) {
@@ -149,7 +146,10 @@ function restartGame() {
     update.disabled = false;
     update.style.opacity = 1;
 }
-restartGame();
+// Footer
+const year = document.querySelector('#current-year');
+
+year.innerHTML = new Date().getFullYear()
 
 
 
