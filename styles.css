@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: bisque;
+    font-family: lacquer, arial, sans-serif;
+  }
+  /* Header */
+  .header {
+    text-align: center;
+    background-color: lightgreen;
+    line-height: 50px;
+    height: 50px;
+    font-size: 25px;
+  }
+  #title {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .descrip {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 25px;
+    color: lightseagreen;
+    text-shadow: 2px 2px 5px white;
+  }
+  #name-holder {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+#nameInput, .update {
+    padding: 10px;
+    margin: 10px;
+}
+#nameInput {
+    background-color: lightgreen;
+    border: 2px solid white;
+    outline: none;
+    box-shadow: 2px 2px 5px black;
+}
+.update {
+    background-color: brown;
+    border: 2px solid pink;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px pink;
+    color: white;
+}
+.update:hover {
+    opacity: 0.9;
+}
+#nameInput::placeholder {
+    color: black;
+}
+  /* Button container */
+  #button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .button {
+    background-color: black;
+    border: 2px solid lightcyan;
+    border-radius: 6px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    transition: 1s;
+  }
+  .button:hover:not(.button-disabled) {
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 5px green;
+  }
+  
+  .button.button-disabled:hover {
+    transform: none;
+    box-shadow: none;
+  }
+  
+  .button .img {
+    max-width: 60%;
+    height: auto;
+  }
+  #score-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #playerText, .computerText {
+    font-size: 30px;
+    padding: 30px;
+    margin-top: 10px;
+    font-family: 'Roboto Slab', serif;
+  }
+  .result {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    color: red;
+  }
+  #scoreMessage {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  #score-container {
+    display: flex;
+    justify-content: center;
+  }
+  #playerscore, #computerscore {
+    font-size: 35px;
+    padding: 20px;
+  }
+  .restartContainer {
+    display: flex;
+    justify-content: center;
+}
+  button.restartBtn {
+    width: 150px;
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: red;
+    color: white;
+}
+  .image-small {
+    display: block;
+    padding: 10px;
+    width: 120px;
+    height: auto;
+  }
+  /* Media queries */
+  @media screen and (max-width: 560px) {
+    .button .img {
+        max-width: 100%;
+        height: auto;
+    }
+  }
+  @media screen and (max-width: 460px) {
+    button.restartBtn {
+      width: 100px;
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 445px) {
+    .image-small {
+      width: 100px;
+      height: auto;
+    }
+    .result {
+      font-size: 25px;
+    }
+    #playerText, .computerText {
+      font-size: 25px;
+    }
+  }
+  @media screen and (max-width: 425px) {
+    .image-small {
+      width: 100px;
+      height: auto;
+    }
+    .result {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    #title {
+      font-size: 30px;
+    }
+    .descrip {
+      font-size: 20px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+
+    .image-small {
+      width: 80px;
+      height: auto;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    #playerText, .computerText {
+      font-size: 22px;
+    }
+    .result {
+      font-size: 17px;
+    }
+    .image-small {
+      width: 70px;
+      height: auto;
+    }
+  }
+
+ 
+  
