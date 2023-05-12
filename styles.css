@@ -138,30 +138,6 @@
     width: 120px;
     height: auto;
   }
-   /* FOOTER */
- .footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  gap: 10px;
-  width: 100%;
-  padding: 10px;
-  color: #ddd;
-  font-size: 20px;
-  background-color: black;
-  font-family: 'Roboto Slab', serif;
-}
-
-.fa-github {
-  color: #ddd;
-  font-size: 24px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.fa-github:hover {
-  transform: rotate(360deg) scale(1.2);
-}
   /* Media queries */
   @media screen and (max-width: 560px) {
     .button .img {
