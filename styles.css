@@ -6,7 +6,7 @@
   
   body {
     background-color: bisque;
-    font-family: lacquer, arial, sans-serif;
+    font-weight: 600;
   }
   /* Header */
   .header {
@@ -15,10 +15,12 @@
     line-height: 50px;
     height: 50px;
     font-size: 25px;
+    font-family: 'Lacquer', cursive;
   }
   #title {
     margin-top: 20px;
     text-align: center;
+    font-family: 'Lacquer', cursive;
   }
   
   .descrip {
@@ -27,6 +29,7 @@
     font-size: 25px;
     color: lightseagreen;
     text-shadow: 2px 2px 5px white;
+    font-family: 'Lacquer', cursive;
   }
   #name-holder {
     display: flex;
@@ -55,6 +58,10 @@
 }
 #nameInput::placeholder {
     color: black;
+}
+/* Game container */
+#game-container {
+  min-height: 80vh;
 }
   /* Button container */
   #button-container {
@@ -98,13 +105,13 @@
     font-size: 30px;
     padding: 30px;
     margin-top: 10px;
-    font-family: 'Roboto Slab', serif;
   }
   .result {
     text-align: center;
     font-size: 30px;
     margin-top: 20px;
     color: red;
+    font-family: 'Lacquer', cursive;
   }
   #scoreMessage {
     text-align: center;
@@ -118,6 +125,7 @@
   #playerscore, #computerscore {
     font-size: 35px;
     padding: 20px;
+    font-family: 'Lacquer', cursive;
   }
   .restartContainer {
     display: flex;
@@ -150,7 +158,6 @@
   color: #ddd;
   font-size: 20px;
   background-color: black;
-  font-family: 'Roboto Slab', serif;
 }
 
 .fa-github {
