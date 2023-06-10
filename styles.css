@@ -17,6 +17,10 @@
     font-size: 25px;
     font-family: 'Lacquer', cursive;
   }
+   /* Main */
+ #main {
+  min-height: 100vh;
+}
   #title {
     margin-top: 20px;
     text-align: center;
@@ -59,10 +63,6 @@
 #nameInput::placeholder {
     color: black;
 }
-/* Game container */
-#game-container {
-  min-height: 70vh;
-}
   /* Button container */
   #button-container {
     display: flex;
@@ -75,7 +75,6 @@
     background-color: black;
     border: 2px solid lightcyan;
     border-radius: 6px;
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
